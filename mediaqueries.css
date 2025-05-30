@@ -117,11 +117,11 @@
     height: auto;
   }
 
-  .menu-links.open {
+  /* .menu-links.open {
     width: 100%;
     left: 0;
     text-align: center;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {

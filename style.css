@@ -1,11 +1,6 @@
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-:root {
-  --primary-bg: #000;
-  --nav-bg: #000;
-  --text-white: #fff;
-}
 * {
   margin: 0;
   padding: 0;
@@ -56,7 +51,7 @@ nav {
 }
 
 a {
-  color: var(--text-white);
+  color: white;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -442,7 +437,9 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  position: relative;
+  padding-top: 4vh;
+  height: 50vh;
+  /* position: relative; */
 }
 
 .color-container {
