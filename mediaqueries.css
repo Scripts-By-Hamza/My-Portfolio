@@ -101,3 +101,45 @@
     text-align: justify;
   }
 }
+@media screen and (max-width: 768px) {
+  .btn {
+    width: 7rem;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .color-container {
+    margin: 1rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu-links.open {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 200px;
+  }
+
+  .color-container {
+    margin: 0.5rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+}
