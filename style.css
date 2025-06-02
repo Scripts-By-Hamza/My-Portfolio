@@ -1,6 +1,7 @@
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +9,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #000000;
+  background: var(--bg-white);
   min-height: 100vh;
-  color: #ffffff;
+  color: var(--bg-black);
   position: relative;
 }
 
@@ -19,7 +20,7 @@ html {
 }
 
 p {
-  color: #fafafa;
+  color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
@@ -40,8 +41,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  background: rgba(20, 20, 20, 0.9);
+  /* background: var(--bg-white);
   backdrop-filter: blur(10px);
+  border-color: #3b3b3b; */
 }
 
 .nav-links {
@@ -51,7 +53,7 @@ nav {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -95,7 +97,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: black;
   transition: all 0.3 ease-in-out;
 }
 
@@ -103,7 +105,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: rgba(20, 20, 20, 0.95);
+  background-color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -117,7 +119,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: white;
+  color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -226,6 +228,11 @@ section {
   font-size: 2rem;
   margin: 15px;
 }
+.gradient-text {
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* BUTTONS */
 
@@ -242,8 +249,8 @@ section {
   width: 8rem;
   border-radius: 2rem;
   background: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid black;
+  color: black;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -256,7 +263,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background: white;
+  background: var(--gradient-purple);
   transition: all 0.5s ease;
   z-index: -1;
 }
@@ -276,7 +283,7 @@ section {
 .btn-color-1:hover,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
-  color: rgb(0, 0, 0);
+  color: var(--bg-white);
 }
 
 .btn-color-2 {
@@ -284,7 +291,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: rgb(0, 0, 0) 0.1rem solid;
 }
 
 .btn-container {
@@ -326,11 +333,11 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(167, 167, 167, 0.149);
   border-radius: 2rem;
   border: none;
   backdrop-filter: blur(20px);
-  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -438,12 +445,12 @@ article .icon {
 
 #projects {
   padding-top: 4vh;
-  height: 50vh;
-  /* position: relative; */
+  height: auto;
+  position: relative;
 }
 
 .color-container {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(167, 167, 167, 0.149);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -469,7 +476,7 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: white;
+  color: black;
   position: relative;
 }
 .project-title::after {
@@ -479,7 +486,7 @@ article .icon {
   left: 50%;
   width: 0;
   height: 2px;
-  background: white;
+  background: gray;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -487,7 +494,7 @@ article .icon {
   width: 50%;
 }
 .project-btn {
-  color: white;
+  color: black;
   border-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -499,6 +506,12 @@ article .icon {
   flex-direction: column;
   height: 70vh;
 }
+#contact2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 20vh;
+}
 
 .contact-info-upper-container {
   display: flex;
@@ -506,7 +519,7 @@ article .icon {
   border-radius: 2rem;
   gap: 1rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  background: rgba(20, 20, 20, 0.9);
+  background: rgba(167, 167, 167, 0.149);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
   margin: 2rem auto;
@@ -532,8 +545,8 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  height: auto;
+  /* margin: 0 2rem; */
 }
 
 footer p {

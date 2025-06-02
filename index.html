@@ -7,7 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-     <link rel="icon" type="image/png" href="/assets/title-pic-1.0.png">
+    <link rel="icon" type="image/png" href="/assets/title-pic-1.0.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -15,6 +15,7 @@
   </head>
 
   <body>
+    <div id="background-canvas"></div>
     <nav id="desktop-nav">
       <div class="logo">Muhammad Hamza</div>
       <div>
@@ -47,9 +48,25 @@
         <img src="./assets/profile-pic-5.0.png" alt="Hamza profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Muhammad Hamza</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p1">
+          <i>Not Just Front-End — Front-Line Of Good Impressions.</i>
+        </p>
+        <h1 class="title">
+          <span style="font-size: 1.2rem">I'm</span
+          ><strong class="gradient-text"> Muhammad Hamza</strong>
+        </h1>
+        <p
+          class="section__text__p2"
+          style="font-size: 1.2rem; color: rgb(167, 167, 167); font-weight: 400"
+        >
+          I turn ideas into fast, functional, and visually sharp websites.
+          Whether it’s a small component or a full layout, I believe great
+          design starts with great code. Clean, responsive, and user-centered
+          web interfaces with
+          <strong class="gradient-text">React, JavaScript, HTML,</strong> and
+          <strong class="gradient-text">CSS</strong>. With a sharp eye for
+          detail and a passion for solving problems
+        </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -75,7 +92,9 @@
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <p class="section__text__p1">
+        <span class="gradient-text">Get To Know More</span>
+      </p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="about-details-container">
@@ -99,18 +118,18 @@
           </div>
           <div class="text-container">
             <p>
-              “I’m a motivated and detail-oriented Computer Science student
-              passionate about front-end development. Pursuing a Bachelor's
-              degree in Information Technology from the Virtual University of
-              Pakistan. I’m passionate about creating modern, user-friendly
-              websites and enjoy bringing ideas to life through code. <br />
-              My core strengths lie in front-end technologies like HTML, CSS,
-              JavaScript, and React, but I also have hands-on experience with
-              back-end tools like PHP and MySQL. <br />In addition to my
-              technical background, my experience as a receptionist has helped
-              me grow strong communication, multitasking, and time management
-              abilities—skills that are just as critical in collaborative tech
-              environments.”
+              "👋 Hi! I'm an IT student at the
+              <i><strong>Virtual University of Pakistan</strong></i
+              >, passionate about front-end development and crafting clean,
+              user-friendly web experiences. 💻 I specialize in
+              <span class="gradient-text">HTML, CSS, JavaScript</span> and
+              <span class="gradient-text">React</span>, with working knowledge
+              of <span class="gradient-text">PHP</span> and
+              <span class="gradient-text">MySQL</span> to understand full-stack
+              workflows. ✨ With a background as a <i>Receptionist</i>, I bring
+              strong communication, multitasking, and time management skills to
+              every tech project. 🚀 I'm always learning, building, and turning
+              ideas into interactive, purposeful code."
             </p>
           </div>
         </div>
@@ -123,7 +142,9 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+      <p class="section__text__p1">
+        <span class="gradient-text">Explore My</span>
+      </p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -195,7 +216,9 @@
       />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">
+        <span class="gradient-text">Browse My Recent</span>
+      </p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -228,7 +251,8 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">
-              Tool Grid <br> Project
+              Tool Grid <br />
+              Project
             </h2>
             <div class="btn-container">
               <button
@@ -249,8 +273,10 @@
       </div>
     </section>
 
- <section id="contact">
-    <p class="section__text__p1">Explore</p>
+    <section id="contact2">
+      <p class="section__text__p1">
+        <span class="gradient-text">Explore</span>
+      </p>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <a href="project.html">
@@ -261,8 +287,10 @@
       </div>
     </section>
 
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+    <section id="contact" style="margin-top: -2rem">
+      <p class="section__text__p1">
+        <span class="gradient-text">Get in Touch</span>
+      </p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -273,15 +301,22 @@
             <i class="fab fa-linkedin icon linkedin"></i>
           </a>
           <p>
-            <a href="https://www.linkedin.com/in/muhammad-hamza-24d03/"
-             target="_blank" >LinkedIn
+            <a
+              href="https://www.linkedin.com/in/muhammad-hamza-24d03/"
+              target="_blank"
+              >LinkedIn
+            </a>
           </p>
         </div>
         <div class="contact-info-container">
           <a href="https://github.com/Scripts-By-Hamza" target="_blank">
             <i class="fab fa-github icon github"></i>
           </a>
-          <p><a href="https://github.com/Scripts-By-Hamza" target="_blank">Github</a></p>
+          <p>
+            <a href="https://github.com/Scripts-By-Hamza" target="_blank"
+              >Github</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -296,7 +331,6 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Scripts By Hamza All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
