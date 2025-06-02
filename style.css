@@ -263,7 +263,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--gradient-purple);
+  background: black;
   transition: all 0.5s ease;
   z-index: -1;
 }
@@ -282,8 +282,8 @@ section {
 
 .btn-color-1:hover,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: var(--bg-white);
+  background: black;
+  color: white;
 }
 
 .btn-color-2 {
@@ -495,7 +495,7 @@ article .icon {
 }
 .project-btn {
   color: black;
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: rgb(0, 0, 0);
 }
 
 /* CONTACT */
