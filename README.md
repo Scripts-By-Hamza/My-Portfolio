@@ -32,7 +32,8 @@ Every piece of this project was picked not just for functionality, but for how i
 ## 📸 Sneak Peek
 Here’s a glimpse of the portfolio in action:  
 
-![Portfolio Demo](link-to-screenshot-or-gif)
+![Portfolio Demo](https://github.com/Scripts-By-Hamza/My-Portfolio/blob/main/Home%20Page.png)
+https://github.com/Scripts-By-Hamza/My-Portfolio/blob/main/Project%20Page.png
 
 ---
 
