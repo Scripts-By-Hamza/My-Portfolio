@@ -16,7 +16,7 @@
 
   <body>
     <nav id="desktop-nav">
-      <a href="index.html" style="text-decoration: none;"><div class="logo">Muhammad Hamza</div></a>
+      <a href="index.html" style="text-decoration: none;"><div class="logo">MUHAMMAD HAMZA</div></a>
       <div>
         <ul class="nav-links">
           <li><a href="index.html">About</a></li>
@@ -27,7 +27,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <a href="index.html" style="text-decoration: none;"><div class="logo">Muhammad Hamza</div></a>
+      <a href="index.html" style="text-decoration: none;"><div class="logo">MUHAMMAD HAMZA</div></a>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -53,8 +53,11 @@
         </div>
       </div>
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+
+    <section id="contact" style="margin-top: -2rem">
+      <p class="section__text__p1">
+        <span class="gradient-text">Get in Touch</span>
+      </p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -65,16 +68,22 @@
             <i class="fab fa-linkedin icon linkedin"></i>
           </a>
           <p>
-            <a href="https://www.linkedin.com/in/muhammad-hamza-24d03/"
+            <a
+              href="https://www.linkedin.com/in/muhammad-hamza-24d03/"
+              target="_blank"
               >LinkedIn
+            </a>
           </p>
         </div>
         <div class="contact-info-container">
-         </a>
           <a href="https://github.com/Scripts-By-Hamza" target="_blank">
             <i class="fab fa-github icon github"></i>
           </a>
-          <p><a href="https://github.com/Scripts-By-Hamza">Github</a></p>
+          <p>
+            <a href="https://github.com/Scripts-By-Hamza" target="_blank"
+              >Github</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
           <a href="https://www.instagram.com/hushedodyssey/" target="_blank">
@@ -88,18 +97,60 @@
         </div>
       </div>
     </section>
+
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Experience</a></li>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">MUHAMMAD HAMZA</h3>
+          <p class="footer-description">
+            Frontend Developer passionate about creating beautiful, functional web experiences.
+          </p>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="window.open('./assets/Muhammad-Hamza-Resume.pdf')">Download CV</a></li>
           </ul>
         </div>
-      </nav>
-      <p>Copyright &#169; 2025 Scripts By Hamza All Rights Reserved.</p>
+        
+        <div class="footer-section">
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/muhammad-hamza-24d03/" target="_blank" class="footer-social-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Scripts-By-Hamza" target="_blank" class="footer-social-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/hushedodyssey/" target="_blank" class="footer-social-link">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-heading">Get In Touch</h4>
+          <div class="footer-contact">
+            <p><i class="fas fa-envelope"></i> Available for opportunities</p>
+            <p><i class="fas fa-map-marker-alt"></i> Pakistan</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <p class="footer-copyright">
+          Copyright &#169; 2025 Scripts By Hamza. All Rights Reserved.
+        </p>
+      </div>
     </footer>
     <script src="script.js"></script>
     <script src="project.js"></script>
