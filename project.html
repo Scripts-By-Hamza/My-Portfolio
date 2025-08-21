@@ -54,6 +54,42 @@
       </div>
     </section>
 
+    <!-- Project Detail Overlay (hidden by default) -->
+    <div id="project-detail-overlay" class="project-detail-overlay" aria-hidden="true">
+      <div class="project-detail-card" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+        <div class="detail-header">
+          <h3 class="detail-header-title">Project Details</h3>
+          <button class="pill-close" aria-label="Close details">Close</button>
+        </div>
+        <div class="detail-body">
+          <div class="detail-grid">
+            <div class="detail-left">
+              <img id="detail-image" src="" alt="Project image" class="detail-image" />
+            </div>
+            <div class="detail-right">
+              <h2 id="detail-title" class="detail-title">Project Title</h2>
+              <p id="detail-subtitle" class="detail-subtitle">&nbsp;</p>
+              <p id="detail-description" class="detail-description">&nbsp;</p>
+              <div class="detail-lists">
+                <div class="detail-section" id="detail-inclusions-wrap" style="display:none;">
+                  <h4>Inclusions</h4>
+                  <ul id="detail-inclusions"></ul>
+                </div>
+                <div class="detail-section" id="detail-highlights-wrap" style="display:none;">
+                  <h4>Highlights</h4>
+                  <ul id="detail-highlights"></ul>
+                </div>
+              </div>
+              <div class="btn-container detail-actions">
+                <a id="detail-github" class="btn btn-color-2 project-btn" href="#" target="_blank" rel="noopener noreferrer">Github</a>
+                <a id="detail-live" class="btn btn-color-2 project-btn" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="contact" style="margin-top: -2rem">
       <p class="section__text__p1">
         <span class="gradient-text">Get in Touch</span>
@@ -152,7 +188,7 @@
         </p>
       </div>
     </footer>
-    <script src="script.js"></script>
     <script src="project.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
